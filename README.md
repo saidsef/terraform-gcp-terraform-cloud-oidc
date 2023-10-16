@@ -1,5 +1,5 @@
-# Terraform GCP GitHub OIDC Provider
-[![CI](https://github.com/saidsef/terraform-gcp-github-oidc/actions/workflows/ci.yaml/badge.svg)](#deployment--usage) ![GitHub issues](https://img.shields.io/github/issues-raw/saidsef/terraform-gcp-github-oidc) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE.md)
+# Terraform GCP Terraform Cloud OIDC Provider
+[![CI](https://github.com/saidsef/terraform-gcp-terraform-cloud-oidc/actions/workflows/ci.yaml/badge.svg)](#deployment--usage) ![GitHub issues](https://img.shields.io/github/issues-raw/saidsef/terraform-gcp-terraform-cloud-oidc) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE.md)
 
 This Terraform module enables you to configure Terraform Cloud as an GCP IAM OIDC identity provider in GCP, which enables Terraform Cloud to access resources within an GCP Projects(s) without requiring long-lived credentials to be stored as Terraform Cloud Variables.
 
@@ -54,17 +54,13 @@ After you have create a workspace, navigate to the Variables page and add the fo
 
 Please see [TERRAFORM.md](./TERRAFORM.md)
 
-## GitHub Actions
-
-Retrieve temporary credentials:
-
 ## Source
 
-Our latest and greatest source of `terraform-gcp-github-oidc` can be found on [GitHub](https://github.com/saidsef/terraform-gcp-github-oidc/fork). Fork us!
+Our latest and greatest source of `terraform-gcp-terraform-cloud-oidc` can be found on [GitHub](https://github.com/saidsef/terraform-gcp-terraform-cloud-oidc/fork). Fork us!
 
 ## Contributing
 
-We would :heart: you to contribute by making a [pull request](https://github.com/saidsef/terraform-gcp-github-oidc/pulls).
+We would :heart: you to contribute by making a [pull request](https://github.com/saidsef/terraform-gcp-terraform-cloud-oidc/pulls).
 
 Please read the official [Contribution Guide](./CONTRIBUTING.md) for more information on how you can contribute.
 
