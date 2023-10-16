@@ -48,8 +48,6 @@ After you have create a workspace, navigate to the Variables page and add the fo
 | Environment variable | TFC_GCP_WORKLOAD_PROVIDER_NAME | The canonical name of the workload identity provider. | false | Yes |
 | Environment variable | TFC_GCP_WORKLOAD_IDENTITY_AUDIENCE | `[]` | false | No |
 
-```
-
 > **_NOTE:_** You can undelete a provider for up to 30 days after deletion. After 30 days, deletion is permanent. Until a provider is permanently deleted, you cannot reuse its name when creating a new provider.
 
 ## Provider Specifications and Requirements
