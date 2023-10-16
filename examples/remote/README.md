@@ -14,7 +14,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_terraform_oidc"></a> [terraform\_oidc](#module\_terraform\_oidc) | ../../ | n/a |
+| <a name="module_terraform_oidc"></a> [terraform\_oidc](#module\_terraform\_oidc) | saidsef/terraform-cloud-oidc/gcp | >= 1 |
 
 ## Resources
 
