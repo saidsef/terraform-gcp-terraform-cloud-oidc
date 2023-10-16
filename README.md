@@ -46,7 +46,7 @@ After you have create a workspace, navigate to the Variables page and add the fo
 | Environment variable | TFC_GCP_PROVIDER_AUTH | true | false | Yes |
 | Environment variable | TFC_GCP_RUN_SERVICE_ACCOUNT_EMAIL | The service account email Terraform Cloud will use when authenticating to GCP| false | Yes |
 | Environment variable | TFC_GCP_WORKLOAD_PROVIDER_NAME | The canonical name of the workload identity provider. | false | Yes |
-| Environment variable | TFC_GCP_WORKLOAD_IDENTITY_AUDIENCE | `[]`` | false | No |
+| Environment variable | TFC_GCP_WORKLOAD_IDENTITY_AUDIENCE | `[]` | false | No |
 
 ```
 

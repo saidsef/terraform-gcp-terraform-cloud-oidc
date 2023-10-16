@@ -9,7 +9,8 @@ provider "google-beta" {
 }
 
 module "terraform_oidc" {
-  source = "../../"
+  source  = "saidsef/terraform-cloud-oidc/gcp"
+  version = ">= 1"
 
   project_id   = var.project_id
   pool_id      = "terraform-cloud"
