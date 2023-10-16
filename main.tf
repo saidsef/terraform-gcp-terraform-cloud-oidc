@@ -1,0 +1,28 @@
+resource "google_iam_workload_identity_pool" "pool" {
+  provider = google-beta
+
+  description               = format("Workload Identity Pool for %s", var.pool_id)
+  disabled                  = false
+  display_name              = format("%s-pool", var.pool_id)
+  project                   = var.project_id
+  workload_identity_pool_id = var.pool_id
+
+  depends_on = [google_project_service.service]
+}
+
+resource "google_iam_workload_identity_pool_provider" "provider" {
+  provider = google-beta
+
+  attribute_condition                = var.attribute_condition
+  attribute_mapping                  = var.attribute_mapping
+  description                        = format("Workload Identity Pool Provider for %s-provider", var.pool_id)
+  display_name                       = format("%s-provider", var.pool_id)
+  project                            = var.project_id
+  workload_identity_pool_id          = google_iam_workload_identity_pool.pool.workload_identity_pool_id
+  workload_identity_pool_provider_id = format("%s-provider", var.pool_id)
+
+  oidc {
+    allowed_audiences = var.allowed_audiences
+    issuer_uri        = var.issuer_uri
+  }
+}
